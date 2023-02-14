@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+    <div class="gay">
+        <p class="gej">Karol to gej</p>
+    </div>
+    <div>
+        <nav>
+            <li><img src="images/1.jpg" class="five"></li>
+            <li><img src="images/2.jpg" class="two"></li>
+            <li><img src="images/3.jpg" class="three"></li>
+            <li><img src="images/4.jpg" class="four"></li>
+            <li><img src="images/5.jpg" class="one"></li>
+            <li><img src="images/6.png" class="six"></li>
+        </nav>
+    <div>
+    <div class="text-container">
+        <h1>Will you be my....<br>Valentine?</h1>
+        <p>*The only right answer is YES.</p>
+    <div class="buttons">
+    <button class="yes" onclick="toggleYes()" id="yes">Yes</button>
+    <button class="no" onclick="toggleNo()" id="no">No</button>
+    <div class="answer">
+        <img src="images/yes.jpg" class="happycat" id="happycat">
+        <img src="images/no.jpg" class="sadcat" id="sadcat">
+    </div>
+    <div>
+        <nav class="hearts">
+            <li><img src="images/heart1.png" class="heart1" id="heart1"></li>
+            <li><img src="images/heart2.png" class="heart2" id="heart2"></li>
+            <li><img src="images/heart3.png" class="heart3" id="heart3"></li>
+            <li><img src="images/heart4.png" class="heart4" id="heart4"></li>
+            <li><img src="images/heart5.png" class="heart5" id="heart5"></li>
+        </nav>
+    </div>
+    <div>
+        <nav class="broken-hearts">
+            <li><img src="images/heart1-broken.png" class="heart1" id="heart1broken"></li>
+            <li><img src="images/heart2-broken.png" class="heart2" id="heart2broken"></li>
+            <li><img src="images/heart3-broken.png" class="heart3" id="heart3broken"></li>
+            <li><img src="images/heart4-broken.png" class="heart4" id="heart4broken"></li>
+            <li><img src="images/heart5-broken.png" class="heart5" id="heart5broken"></li>
+            <button<><li><img src="images/partner.png" class="partner" onclick="toggleBeka()" id="partnernaukowy" id="partnernaukowybeka"></li><button<>
+        </nav>
+    </div>
+    <div>
+        <nav>
+            <li><img src="images/beka.png" class="beka" id="bekatrch"></li>
+        </nav>
+    </div>
+</div>
+<script>
+     var yes = document.getElementById("yes");
+    var no = document.getElementById("no");
+    var happycat = document.getElementById("happycat");
+    var sadcat = document.getElementById("sadcat");
+
+    var heart1 = document.getElementById("heart1");
+    var heart2 = document.getElementById("heart2");
+    var heart3 = document.getElementById("heart3");
+    var heart4 = document.getElementById("heart4");
+    var heart5 = document.getElementById("heart5");
+
+    var heart1broken = document.getElementById("heart1broken");
+    var heart2broken = document.getElementById("heart2broken");
+    var heart3broken = document.getElementById("heart3broken");
+    var heart4broken = document.getElementById("heart4broken");
+    var heart5broken = document.getElementById("heart5broken");
+
+    var partnernaukowy = document.getElementById("partnernaukowy");
+    var partnernaukowybeka = document.getElementById("partnernaukowybeka");
+
+    var bekatrch = document.getElementById("bekatrch");
+
+    function toggleBeka() {
+        partnernaukowy.classList.toggle("partnernaukowybeka")
+        bekatrch.classList.toggle("bekatrch")
+    }
+
+    function toggleYes() {
+        yes.classList.toggle("on")
+        happycat.classList.toggle("on")
+        heart1.classList.toggle("onok")
+        heart2.classList.toggle("onok")
+        heart3.classList.toggle("onok")
+        heart4.classList.toggle("onok")
+        heart5.classList.toggle("onok")
+        partnernaukowy.classList.toggle("partnernaukowy")
+    }
+    function toggleNo() {
+        no.classList.toggle("on")
+        sadcat.classList.toggle("on")
+        happycat.classList.toggle("on")
+        heart1broken.classList.toggle("onok")
+        heart2broken.classList.toggle("onok")
+        heart3broken.classList.toggle("onok")
+        heart4broken.classList.toggle("onok")
+        heart5broken.classList.toggle("onok")
+
+    }
+
+</script>
+</body>
+</html>
